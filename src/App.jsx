@@ -118,9 +118,7 @@ function App() {
         throw new Error("Invalid subreddit name");
       }
       const response = await fetch(
-        `https://vibecheck-khhu.onrender.com/api/subreddit/${encodeURIComponent(
-          cleanSubreddit
-        )}`
+        `https://vibecheck-khhu.onrender.com/api/subreddit/${encodeURIComponent(cleanSubreddit)}`
       );
 
       if (!response.ok) {

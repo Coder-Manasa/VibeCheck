@@ -165,10 +165,7 @@ function cleanText(text = "") {
 
 async function fetchRedditPosts(subreddit) {
   const redditUrl =
-    `https://www.reddit.com/r/${encodeURIComponent(
-      subreddit
-    )}/hot.rss?limit=25`;
-
+    `https://www.reddit.com/r/${encodeURIComponent(subreddit)}/hot.rss?limit=50`;
   console.log("");
   console.log("======================================");
   console.log(`Fetching r/${subreddit}`);
