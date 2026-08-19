@@ -117,9 +117,8 @@ function App() {
       if (!cleanSubreddit) {
         throw new Error("Invalid subreddit name");
       }
-
       const response = await fetch(
-        `http://localhost:5000/api/subreddit/${encodeURIComponent(
+        `https://vibecheck-khhu.onrender.com/api/subreddit/${encodeURIComponent(
           cleanSubreddit
         )}`
       );
